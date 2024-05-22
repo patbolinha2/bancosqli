@@ -17,6 +17,8 @@ include "conexao.php";
 $sql ="SELECT * FROM usuario where nome LIKE'%$pesquisa%' ";//TRADUÇÃO selecione tudo que esta na tabela onde a coluna nome esteja um LIKE(restringir a busca)
 $dados = mysqli_query($conexao, $sql);  
   ?>
+
+  
 <div class="container">
         <div class="row">
             <div class="col">
