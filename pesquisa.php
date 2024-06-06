@@ -76,15 +76,26 @@ $dados = mysqli_query($conexao, $sql);
                                       </button>
                                       </div>
                                       <div class="modal-body">
+                                      <form action="excluir.php!" method=post>
+                                          <p>deseja realmete excluir <b id="nome_pessoa"> nome pessoa<b>?</p>
                                           
                                       </div>
                                       <div class="modal-footer">
+
                                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
                                       <button type="button" class="btn btn-primary">Sim</button>
+                                      <input type="hidden" name="nome" id="nome_pessoa1" value="">
                                       </div>
                                       </div>
                                       </div>
                                       </div>
+                                      <script>
+                                        function pegar_dados(id,nome){
+                                          document.getElementById("nome_pessoa").innerHTML = nome
+                                          document.getElementById("nome_pessoa").value = nome
+                                          document.getElementById("cod_pessoa").value = id
+                                        }
+                                      </script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
