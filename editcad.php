@@ -41,6 +41,6 @@ WHERE id = '$id'";
               
                 <div class="jumbotron">
   <p class="lead">
-    <a class="btn btn-primary btn-lg" href="pesquisa.php" role="button" style="color:black">voltar</a>
+    <a class="btn btn-primary btn-lg" href="pesquisa.php" role="button" style="color:black      ">𝔳𝔬𝔩𝔱𝔞𝔯</a>
   </p>
 </div>

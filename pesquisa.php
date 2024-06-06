@@ -22,7 +22,7 @@ $dados = mysqli_query($conexao, $sql);
 <div class="container">
         <div class="row">
             <div class="col">
-                <h1 style="color:pink;">Pesquisa</h1>
+                <h1 style="color:purple">Pesquisa</h1>
                 <nav class="navbar navbar-light bg-light">
   <form class="form-inline" method="POST" action="pesquisa.php">
     <input class="form-control mr-sm-2" type="search" placeholder="buscar" aria-label="Search">
@@ -32,12 +32,12 @@ $dados = mysqli_query($conexao, $sql);
 <table class="table table-hover">
   <thead>
     <tr>
-      <th scope="col"style="color:black;">Nome</th>
-      <th scope="col" style="color:black;">Email</th>
-      <th scope="col" style="color:black;">Açoes</th>
+      <th scope="col"style="color:purple;">𝔫𝔬𝔪𝔢</th>
+      <th scope="col" style="color:purple;">𝔢𝔪𝔞𝔦𝔩</th>
+      <th scope="col" style="color:purple;">𝔞ç𝔬𝔢𝔰</th>
 
       
-    </tr>
+    </tr> 
   </thead>
   <tbody>
     <?php
@@ -70,13 +70,13 @@ $dados = mysqli_query($conexao, $sql);
                                       <div class="modal-dialog" role="document">
                                       <div class="modal-content">
                                       <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel">Confirmação de exclusão</h5>
+                                      <h5 class="modal-title" id="exampleModalLabel">voce realmente quer excluir?</h5>
                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                       <span aria-hidden="true">&times;</span>
                                       </button>
                                       </div>
                                       <div class="modal-body">
-                                          ...
+                                          
                                       </div>
                                       <div class="modal-footer">
                                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
